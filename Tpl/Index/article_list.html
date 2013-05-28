@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta content="电子科技大学数学科学学院,电子科技大学,数学科学学院,UESTC" name="keywords">
+        <meta content="晴空工作室" name="author">
+        <title>电子科技大学数学科学学院</title>
+        <link type="text/css" rel="stylesheet" href="Common/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="Common/css/article.css" />
+        <link rel="Shortcut Icon" href="Common/images/MathLogo.ico" />
+	</head>
+<body>
+	<div id="main">
+	{$header}
+	<div class="ClearBox"></div>
+	<div id="content">
+		{$left}
+		<div id="right">
+			<div id="article_head">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="index.php">网站首页</a>&gt;
+				<a href="index.php?a=article_list&id={$sort.id}">{$sort.name}</a>
+			</div>
+			<div id="article_content">
+				<volist name="list" id="vo">
+					<div class="ClearBox"></div>
+					<div class="article_row">
+						<div class="article_img"></div>
+						<div class="article_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,30,'utf-8',false}</a></div>
+						<div class="article_time">[{$vo.launch_time|msubstr=0,10,'utf-8',false}]</div>
+					</div>
+				</volist>
+				<div class="ClearBox"></div>
+				<div id="article_page">
+					{$page}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ClearBox"></div>
+	{$footer}
+	</div>
+</body>
+</html>

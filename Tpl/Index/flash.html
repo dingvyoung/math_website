@@ -1,0 +1,32 @@
+		<!-----------图片切换  begin----------->
+		<div class="sub_box">
+			<div id="p-select" class="sub_nav">
+				<div class="sub_no" id="bd1lfsj">
+					<ul>
+						<li class="show">1</li>
+						<li class="">2</li>
+						<li class="">3</li>
+						<li class="">4</li>
+						<li class="">5</li>
+					</ul>
+				</div>
+			</div>
+			<div id="bd1lfimg">
+				<div>
+					<dl class="show"></dl>
+					<volist name='flash' id='vo'>
+					<dl class="flash_dl">
+						<dt>
+							<a href="{$vo.link}" title="" target="_blank">
+								<img class="flash_img" src="{$vo.path}" alt="">
+							</a>
+						</dt>
+						<dd>
+							<h2><a href="#" target="_blank">{$vo.description}</a></h2>
+						</dd>
+					</dl>
+					</volist>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">movec();</script>

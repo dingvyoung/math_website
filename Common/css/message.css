@@ -1,0 +1,21 @@
+@charser 'utf-8';
+
+.show_message{
+	width:750px;
+}
+
+.tdbg-dark{
+	background:none repeat scroll 0% 0% rgb(218, 244, 245);
+	line-height:120%;
+	border-top:thin dashed rgb(204, 204, 204);
+}
+
+#name_input{
+	width:100px;
+}
+
+#context_input{
+	width:470px;
+	height:100px;
+	resize:none;
+}

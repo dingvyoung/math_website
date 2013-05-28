@@ -1,0 +1,58 @@
+@charset 'utf-8';
+
+#article_head{
+	width:740px;
+	height:26px;
+	margin:0;
+	background:url(../images/sm_7.gif);
+	line-height:26px;
+	font-size:14px;
+}
+
+#article_content{
+	width:738px;
+	margin:0 0 20px 0;
+	border:1px solid #ddd;
+}
+
+#article_body{
+	width:650px;
+	margin:0 0 10px 30px;
+	float:left;
+}
+
+.article_row{
+	width:600px;
+	height:25px;
+	float:left;
+	line-height:25px;
+	margin:5px 0 0 20px;
+}
+
+.article_img{
+	width:20px;
+	height:15px;
+	float:left;
+	background:url(../images/dot.gif);
+	background-repeat:no-repeat;
+	margin:7px 0 0 0;
+
+}
+
+.article_text{
+	height:25px;
+	float:left;
+	line-height:25px;
+}
+
+.article_time{
+	width:150px;
+	height:25px;
+	float:left;
+	line-height:25px;
+	margin:0 0 0 10px;
+}
+
+#article_page{
+	text-align:center;
+}

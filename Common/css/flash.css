@@ -1,0 +1,34 @@
+﻿
+ul,li,ol{ list-style:none;}
+table{ border-collapse:collapse; border-spacing:0;}
+em,i,u{ font-style:normal;}
+.clear{clear:both;  font-size:0; overflow:hidden; height:0;}
+.blank10{clear:both;  font-size:0; overflow:hidden; height:10px;}
+.blank{clear:both;  font-size:0; overflow:hidden; height:10px; background:#FFF;}
+
+ /*********图片切换 css定义***********/
+.sub_box{width:360px; height:220px; margin:5px;float:left; position:relative; overflow:hidden; border:1px solid #cccccc;}
+.sub_box img{border:none; width:360px; height:220px;margin:0;}
+#bd1lfimg{position:relative; width:360px; height:220px; overflow:hidden;margin:0;}
+#bd1lfimg div{width:100000px; margin-left:-4px;}
+#bd1lfimg dl{width:360px; height:220px; position:relative; overflow:hidden; float:left;margin:0;}
+#bd1lfimg dt{width:360px; height:220px; position:absolute; left:0px; top:0px;}
+#bd1lfimg dd{width:280px; height:60px; background:#000000; filter:alpha(Opacity=70); Opacity:0.7; position:absolute; left:0px; bottom:0px; padding:0 20px;}
+#bd1lfimg dd h2{height:20px; padding:0 0 2px 0; line-height:20px; overflow:hidden;}
+#bd1lfimg dd h2 a{font-size:14px; font-weight:bold; color:#ffffff;}
+#bd1lfimg dd a{color:#ffffff; text-decoration:none;}
+#bd1lfimg dd a:hover{text-decoration:none; color:#cccccc;}
+#bd1lfimg dd tt{color:#dddddd; line-height:1.2em;}
+#bd1lfimg dd tt a:hover{text-decoration:underline;}
+.sub_nav{width:360px; height:25px; bottom:0px; position:absolute; color:#999999; z-index:200;margin:0;display:inline;}
+.sub_no{height:25px; float:right;margin:0;}
+.sub_no li{display:block; width:25px; height:25px; float:left; overflow:hidden; line-height:25px; vertical-align:middle; text-align:center; background:#000000; filter:alpha(Opacity=70); Opacity:0.7; font-family:Arial; font-size:11px; color:#999999; cursor:pointer;margin:-10px 0 0 0;}
+.sub_no li.show{background:#ffffff; color:#000000;margin:-10px 0 0 0;}
+.sub_more{float:right; width:50px; height:25px; background:#000000; filter:alpha(Opacity=70); Opacity:0.7; color:#999999; text-align:center; line-height:25px;margin:0;}
+.sub_more a{color:#999999;}
+.sub_more a:hover{color:#cccccc; text-decoration:none;}
+
+.flash_dl1{margin:0;width:360px; height:220px; position:relative; overflow:hidden; float:left;}
+.show1{margin:0;width:360px; height:220px; position:relative; overflow:hidden; float:left;}
+.flash_dl{margin:0;width:360px; height:220px; position:relative; overflow:hidden; float:left;}
+.show{margin:0;width:360px; height:220px; position:relative; overflow:hidden; float:left;}

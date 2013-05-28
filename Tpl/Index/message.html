@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta content="电子科技大学数学科学学院,电子科技大学,数学科学学院,UESTC" name="keywords">
+        <meta content="晴空工作室" name="author">
+        <title>留言板-电子科技大学数学科学学院</title>
+        <link type="text/css" rel="stylesheet" href="Common/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="Common/css/message.css" />
+        <link rel="Shortcut Icon" href="Common/images/MathLogo.ico" />
+        <script type="text/javascript">
+			function checkMsg(){
+				if (document.getElementById('title_input').value==''){
+					alert("标题不能为空！");
+					return false;
+				}
+				if (document.getElementById('name_input').value==''){
+					alert("留言者不能为空！");
+					return false;
+				}
+				if (document.getElementById('context_input').value==''){
+					alert("内容不能为空！");
+					return false;
+				}
+				return true;
+			}
+        </script>
+	</head>
+<body>
+	<div id="main">
+	{$header}
+	<div class="ClearBox"></div>
+	<div id="content">
+		{$left}
+		<div id="right">
+			<h3>{$notice}</h3>
+			<volist name="list" id="vo">
+			<div class="ClearBox"></div>
+			<table class="show_message">
+				<tr>
+					<td height="25" class="tdbg-dark">&nbsp;<strong>{$vo.title}</strong></td>
+				</tr>
+				<tr>
+					<td>
+					<table width="98%" cellspacing="0" cellpadding="0" align="center">
+						<tr>
+							<td valign="top" style="width:180px; height:100px; padding-top:10px; line-height:150%;">
+								留言者：{$vo.name}<br>
+								留言时间：<span class="gray">{$vo.mtime|date="y-m-d",###}</span><br>
+								留言给：{$vo.mailto}</td>
+							<td style="width:1px; background-color:#c0c0c0;"></td>
+							<td valign="top" style="padding:5px 10px 5px 20px; word-break:break-all">
+								{$vo.context}
+								<hr size="1"><span style="font-size:14px; color:red">回复：&nbsp;{$vo.reply}</span>
+							</td>
+						</tr>
+					</table>
+				</td>
+				</tr>
+			</table>
+			</volist>
+			<div class="ClearBox"></div>
+			<center>{$page}</center>
+			<div class="ClearBox"></div>
+			<form method="post" action="index.php?a=message" onSubmit="return checkMsg();">
+				<table class="show_message">
+					<tr>
+						<td height="25" class="tdbg-dark">&nbsp;标题:<input type="text" id="title_input" name="title"/></td>
+					</tr>
+					<tr>
+						<td>
+						<table width="98%" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td valign="top" style="width:220px; height:100px; padding-top:10px; line-height:150%;">
+									留言者：<input type="text" id="name_input" name="name"><br /><br />
+									留言给：<select id="mailto" name="mailto">
+										<option value="19">学生科</option>
+										<option value="20">教务科</option>
+										<option value="21">研究生科</option>
+										<option value="22">人事党务</option>
+										<option value="34">学院办公室</option>
+										<option value="32">专业学位与继教</option>
+										<option value="31">网站管理员</option>
+									</select>
+								</td>
+								<td style="width:1px; background-color:#c0c0c0;"></td>
+								<td valign="top" style="padding:5px 10px 5px 20px; word-break:break-all">
+									<textarea name="context" id="context_input" ></textarea>
+									<input type="submit" name="submit" value="提交">&nbsp;&nbsp;&nbsp;
+									<input type="reset" value="重写">
+								</td>
+							</tr>
+						</table>
+					</td>
+					</tr>
+				</table>
+			</form>
+			<div class="ClearBox"></div>
+		</div>
+	</div>
+	<div class="ClearBox"></div>
+	{$footer}
+	<div class="ClearBox"></div>
+	</div>
+</body>
+</html>

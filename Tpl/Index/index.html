@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta content="电子科技大学数学科学学院,电子科技大学,数学科学学院,UESTC" name="keywords">
+        <meta content="晴空工作室" name="author">
+        <title>电子科技大学数学科学学院</title>
+        <link type="text/css" rel="stylesheet" href="Common/css/common.css" />
+        <link type="text/css" rel="stylesheet" href="Common/css/index.css" />
+        <link type="text/css" rel="stylesheet" href="Common/css/flash.css" />
+        <link rel="Shortcut Icon" href="Common/images/MathLogo.ico" />
+        <script type="text/javascript" src="Common/js/flash.js"></script>
+	</head>
+<body>
+	<!--[if lt IE 8]>
+	<div style="CLEAR: both; BORDER-RIGHT: #f7941d 1px solid; BORDER-TOP: #f7941d 1px solid; BACKGROUND: #feefda; BORDER-LEFT: #f7941d 1px solid; BORDER-BOTTOM: #f7941d 1px solid; POSITION: relative; HEIGHT: 75px; TEXT-ALIGN: center">
+		<div style="FONT-WEIGHT: bold; RIGHT: 3px; FONT-FAMILY: courier new; POSITION: absolute; TOP: 3px">
+			<a onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;' href="http://www.ie6nomore.com/#">
+				<img style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="Close this notice" src="Common/images/ie6nomore-cornerx.jpg">
+			</a>
+		</div>
+		<div style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px auto; OVERFLOW: hidden; WIDTH: 640px; COLOR: black; PADDING-TOP: 0px; TEXT-ALIGN: left">
+			<div style="FLOAT: left; WIDTH: 75px">
+				<img alt=Warning! src="Common/images/ie6nomore-warning.jpg">
+			</div>
+			<div style="FLOAT: left; WIDTH: 275px; FONT-FAMILY: Arial, sans-serif">
+				<div style="MARGIN-TOP: 12px; FONT-WEIGHT: bold; FONT-SIZE: 14px">您正在使用过时的浏览器</div>
+				<div style="MARGIN-TOP: 6px; FONT-SIZE: 12px; LINE-HEIGHT: 12px">为了获得更佳得浏览体验，请升级到最新的浏览器</div>
+			</div>
+			<div style="FLOAT: left; WIDTH: 75px">
+				<a href="http://firefox.com.cn/" target=_blank>
+					<img style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="获取 Firefox（火狐）" src="Common/images/ie6nomore-firefox.jpg">
+				</a>
+			</div>
+			<div style="FLOAT: left; WIDTH: 75px">
+				<a href="http://windows.microsoft.com/zh-CN/internet-explorer/products/ie/home" target=_blank>
+					<img style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="获取 Internet Explorer 8" src="Common/images/ie6nomore-ie8.jpg">
+				</a>
+			</div>
+			<div style="FLOAT: left; WIDTH: 73px">
+				<a href="http://www.apple.com.cn/safari/download/" target=_blank>
+					<img style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="获取 Safari 4" src="Common/images/ie6nomore-safari.jpg">
+				</a>
+			</div>
+			<div style="FLOAT: left">
+				<a href="http://www.google.cn/chrome/" target=_blank>
+					<img style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" alt="获取 Google Chrome" src="Common/images/ie6nomore-chrome.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+	<![endif]-->
+	<div id="main">
+	{$header}
+	<div class="ClearBox"></div>
+	<div id="content">
+		{$left}
+		<div id="right">
+			{$flash}
+			<div id="info">
+				<div id="info_title">
+					<div id="info_title_text">综合信息</div>
+					<a href="index.php?a=article_list&id=9"><div id="info_title_more">更多</div></a>
+				</div>
+				<volist name="zhxx" id="vo">
+				<div class="info_row">
+					<div class="info_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">本科教学 Undergraduate</div>
+					<a href="index.php?a=article_list&id=10"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="bkjx" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">研究生培养(含专业学位)</div>
+					<a href="index.php?a=article_list&id=22"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="yjspy" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">学术信息 Academic information</div>
+					<a href="index.php?a=article_list&id=12"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="xsxx" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">学生工作 Student work</div>
+					<a href="index.php?a=article_list&id=11"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="xsgz" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">人事党务 Personel and party</div>
+					<a href="index.php?a=article_list&id=13"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="rsdw" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+			<div class="news">
+				<div class="news_title">
+					<div class="news_title_text">继续教育 Continue education</div>
+					<a href="index.php?a=article_list&id=41"><div class="news_title_more">更多</div></a>
+				</div>
+				<volist name="rsdw" id="vo">
+				<div class="news_row">
+					<div class="news_row_img"></div>
+					<div class="info_row_text"><a href="index.php?a=article&id={$vo.articleid}">{$vo.title|msubstr=0,20,'utf8',false}</a></div>
+					<div class="info_row_time">[{$vo.launch_time|msubstr=5,5,'utf-8',false}]</div>
+				</div>
+				</volist>
+			</div>
+		</div>
+	</div>
+	<div class="ClearBox"></div>
+	{$footer}
+	</div>
+</body>
+</html>

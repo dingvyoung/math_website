@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录-数学科学学院后台管理系统</title>
+	<link href="Common/css/layout.css" rel="stylesheet" type="text/css" />
+	<link href="Common/css/login.css" rel="stylesheet" type="text/css" />
+	<link href="Common/css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="logincontainer">
+    	<div id="loginbox">
+        	<div id="loginheader">
+            	<h2>数学科学学院后台管理系统</h2>
+            </div>
+            <div id="innerlogin">
+            	<form action="index.php?m=Admin&a=login" method="post">
+                	<p>用户名：</p>
+                	<input type="text" class="logininput" name="username" />
+                    <p>密码：</p>
+                	<input type="password" class="logininput" name="password" />
+                   	<input type="submit" class="loginbtn" name="submit" value="登录" /><br />
+                </form>
+				<p>{$error_msg}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
